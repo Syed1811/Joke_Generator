@@ -1,0 +1,70 @@
+:root {
+    --bg: rgb(206, 124, 115);
+  }
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg);
+  background-image: radial-gradient(circle,#d16ba5, #c777b9, #ba83ca, #aa8fd8,#9a9ae1, #8aa7ec, #79b3f4, #69bff8,#52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.generator, .generator-btn { font: 1rem/1.6helvetica, sans-serif; }
+
+.generator {
+  position: relative;
+  width: min(600px,90%);
+  border-radius: 0.75rem;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+  text-align: center;
+}
+
+.generator::before {
+  content: open-quote;
+  font-size: 5rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.generator-setup {
+  margin-top: -3rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: white;
+}
+
+.generator-punchline {
+  color: rgba(255,255,255,0.9);
+  font-style: italic;
+}
+
+.generator-btn {
+  font-size: 0.9rem;
+  font-weight: 900;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 1.2rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.generator-btn:active {
+  background-color: white;
+  color: var(--bg);
+}
+
+.generator-btn:hover {
+  background-color: white;
+  color: var(--bg);
+}
